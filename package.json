@@ -1,0 +1,22 @@
+{
+  "name": "𝐗 𝐍𝐎𝐁𝐈𝐓𝐀 𝐕1 𝐗𝐃",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fresh Telegram pairing bot using Baileys multi-device sessions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check pair.js && node --check wa-handler.js && node --check commands-only.js && node --check config.js && node --check botSettings.js && node --check plugins/automation.js && node --check plugins/downloader.js && node --check plugins/fun.js && node --check plugins/sourceCommands.js && node --check plugins/antilink.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "latest",
+    "dotenv": "^16.4.7",
+    "node-telegram-bot-api": "^0.66.0",
+    "pino": "^9.5.0",
+    "axios": "^1.7.9"
+  }
+}
